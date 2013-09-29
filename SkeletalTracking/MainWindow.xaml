@@ -1,0 +1,43 @@
+﻿<Window x:Class="SkeletalTracking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Skeletal Movement Tracker" Height="608" Width="1322" Loaded="Window_Loaded">
+    <Grid Height="615" Width="1310" ClipToBounds="False" HorizontalAlignment="Left">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1308*" />
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Image Margin="12,31,656,104" Name="image" Stretch="Fill" Height="480" Width="640" HorizontalAlignment="Center" />
+        <CheckBox Content="Seated Mode?" Height="25" HorizontalAlignment="Left" Margin="12,520,0,0" Name="checkBoxSeated" VerticalAlignment="Top" Width="107" Checked="checkBoxSeated_Checked" Click="checkBoxSeated_Checked" />
+        <Image HorizontalAlignment="Left" Margin="711,40,0,335" Name="imageXZ" Stretch="Fill" Width="320" Height="240" />
+        <Image Height="240" HorizontalAlignment="Left" Margin="711,305,0,0" Name="imageYZ" Stretch="Fill" VerticalAlignment="Top" Width="320" />
+        <Label Content="X-Z Plane" Height="21" HorizontalAlignment="Left" Margin="711,21,0,0" Name="label1" VerticalAlignment="Top" Width="108" FontSize="10" />
+        <Label Content="Y-Z Plane" Height="23" HorizontalAlignment="Left" Margin="711,276,0,0" Name="label2" VerticalAlignment="Top" Width="81" FontSize="10" />
+        <Label Content="0.0" Height="25" HorizontalAlignment="Left" Margin="1075,31,0,0" Name="xLabel" VerticalAlignment="Top" Width="114" />
+        <Label Content="0.0" Height="26" HorizontalAlignment="Left" Margin="1075,62,0,0" Name="yLabel" VerticalAlignment="Top" Width="110" />
+        <Label Content="0.0" Height="23" HorizontalAlignment="Left" Margin="1075,94,0,0" Name="zLabel" VerticalAlignment="Top" Width="110" />
+        <Label Content="X-Rotaton" Height="28" HorizontalAlignment="Left" Margin="1191,31,0,0" Name="label3" VerticalAlignment="Top" Width="74" />
+        <Label Content="Y-Rotation" Height="26" HorizontalAlignment="Left" Margin="1191,62,0,0" Name="label4" VerticalAlignment="Top" Width="74" />
+        <Label Content="Z-Rotation" Height="24" HorizontalAlignment="Left" Margin="1191,93,0,0" Name="label5" VerticalAlignment="Top" Width="70" />
+        <Button Content="Record" Height="22" HorizontalAlignment="Left" Margin="113,520,0,0" Name="recordButton" VerticalAlignment="Top" Width="87" Click="recordButton_Click" />
+        <Button Content="Stop" Height="22" HorizontalAlignment="Right" Margin="0,520,1012,0" Name="stopButton" VerticalAlignment="Top" Width="90" Click="stopButton_Click" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="1075,135,0,0" Name="boneSelectionBox" VerticalAlignment="Top" Width="186" SelectionChanged="boneSelectionBox_SelectionChanged" />
+        <Button Content="Start" Height="23" HorizontalAlignment="Left" Margin="1172,174,0,0" Name="btnVidStreaming" VerticalAlignment="Top" Width="75" Click="btnVidStreaming_Click" />
+        <Label Content="Live Streaming:" Height="28" HorizontalAlignment="Left" Margin="1075,173,0,0" Name="label6" VerticalAlignment="Top" />
+        <Menu IsMainMenu="True" Height="23" HorizontalAlignment="Left" Name="LoginMenu" VerticalAlignment="Top" Width="1307" Margin="0,0,0,0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Options">
+                <MenuItem Header="_Preferences"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Account">
+                <MenuItem Header="_Log In" Name="LoginLogoutItem" Click="Login_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="Abou_t" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

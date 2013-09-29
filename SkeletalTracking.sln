@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkeletalTracking", "SkeletalTracking\SkeletalTracking.csproj", "{13EA41D6-96A9-435A-AC7C-AFDE80C1E1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpensimTestServer", "OpensimTestServer\OpensimTestServer.csproj", "{D1375E0C-E5C7-4327-9E90-82E5AD43A97C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13EA41D6-96A9-435A-AC7C-AFDE80C1E1CE}.Debug|x86.ActiveCfg = Debug|x86
+		{13EA41D6-96A9-435A-AC7C-AFDE80C1E1CE}.Debug|x86.Build.0 = Debug|x86
+		{13EA41D6-96A9-435A-AC7C-AFDE80C1E1CE}.Release|x86.ActiveCfg = Release|x86
+		{13EA41D6-96A9-435A-AC7C-AFDE80C1E1CE}.Release|x86.Build.0 = Release|x86
+		{D1375E0C-E5C7-4327-9E90-82E5AD43A97C}.Debug|x86.ActiveCfg = Debug|x86
+		{D1375E0C-E5C7-4327-9E90-82E5AD43A97C}.Debug|x86.Build.0 = Debug|x86
+		{D1375E0C-E5C7-4327-9E90-82E5AD43A97C}.Release|x86.ActiveCfg = Release|x86
+		{D1375E0C-E5C7-4327-9E90-82E5AD43A97C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
